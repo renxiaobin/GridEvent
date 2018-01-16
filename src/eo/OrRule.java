@@ -5,18 +5,9 @@ public class OrRule {
     int arid;
     int eid;
     int sid;
-    int type;
+    int signal_type;
     int order;
     String signal_value;
-
-    public String getSignal_value() {
-        return signal_value;
-    }
-
-    public void setSignal_value(String signal_value) {
-        this.signal_value = signal_value;
-    }
-
 
     public int getOrid() {
         return orid;
@@ -50,12 +41,12 @@ public class OrRule {
         this.sid = sid;
     }
 
-    public int getType() {
-        return type;
+    public int getSignal_type() {
+        return signal_type;
     }
 
-    public void setType(int type) {
-        this.type = type;
+    public void setSignal_type(int signal_type) {
+        this.signal_type = signal_type;
     }
 
     public int getOrder() {
@@ -66,5 +57,11 @@ public class OrRule {
         this.order = order;
     }
 
+    public String getSignal_value() {
+        return signal_value;
+    }
 
+    public void setSignal_value(String signal_value) {
+        this.signal_value = signal_value;
+    }
 }

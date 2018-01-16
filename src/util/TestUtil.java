@@ -20,11 +20,11 @@ public class TestUtil {
         List<Signal> slist = daoUtils.getForList(Signal.class,"select * from `signal`");
         System.out.println(slist.size());
 
-        List<Menu> mlist = daoUtils.getForList(Menu.class,"select * from event_menu_info");
-        System.out.println(mlist.size());
+        List<AttributeName> anlist = daoUtils.getForList(AttributeName.class,"select * from attribute_name");
+        System.out.println(anlist.size());
 
-        List<SignalEvent> selist = daoUtils.getForList(SignalEvent.class,"select * from event_history_data");
-        System.out.println(selist.size());
+        List<HistoryData> hdlist = daoUtils.getForList(HistoryData.class,"select * from history_data");
+        System.out.println(hdlist.size());
 
         List<Event> elist = daoUtils.getForList(Event.class,"select * from event");
         System.out.println(elist.size());
